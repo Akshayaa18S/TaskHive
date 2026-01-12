@@ -1,4 +1,4 @@
-const pool = require('../db');
+const pool = require('../prisma');
 
 const createTask = async (req, res) => {
   try {

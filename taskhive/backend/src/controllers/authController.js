@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const pool = require('../db');
+const pool = require('../prisma');
 
 const register = async (req, res) => {
   try {
