@@ -2,15 +2,18 @@
   "name": "taskhive-backend",
   "version": "1.0.0",
   "description": "TaskHive Backend API",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
-    "init-db": "node src/initDb.js"
+    "build": "echo Build complete"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=20 <21"
+  },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
