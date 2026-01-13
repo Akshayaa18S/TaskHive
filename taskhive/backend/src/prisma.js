@@ -5,10 +5,11 @@ const pool = new Pool({
   ssl: {
     rejectUnauthorized: false,
   },
+  family: 4, // ⭐ FORCE IPv4 (THIS FIXES ENETUNREACH)
 });
 
 pool.on("error", (err) => {
-  console.error("Unexpected error on idle client", err);
+  console.error("Unexpected PG error", err);
   process.exit(1);
 });
 
